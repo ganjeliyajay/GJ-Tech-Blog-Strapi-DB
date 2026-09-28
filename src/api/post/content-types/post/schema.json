@@ -25,7 +25,8 @@
       "required": true
     },
     "slug": {
-      "type": "string",
+      "type": "uid",
+      "targetField": "title",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -41,7 +42,7 @@
           "localized": true
         }
       },
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images"
       ]
@@ -55,7 +56,7 @@
       }
     },
     "description": {
-      "type": "text",
+      "type": "blocks",
       "pluginOptions": {
         "i18n": {
           "localized": true
